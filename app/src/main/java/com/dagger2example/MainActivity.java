@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ((App) getApplication()).getAppComponent().inject(this);
-        ///check we got instances instead of null:
+        ///check we got instances instead of our classes:
         Log.d(TAG, "onCreate: " + String.valueOf(context));
         Log.d(TAG, "onCreate: " + String.valueOf(app));
     }
